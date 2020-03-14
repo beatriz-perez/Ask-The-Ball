@@ -8,6 +8,9 @@ Mi primer side project durante mi formación en Adalab, o el resultado de todo u
 
 ### Cómo funciona
 
+La bola 8 es un juguete muy conocido, seguro que muchos habéis tenido una. 
+Esta es su versión online, y funciona así:
+
 Haz cualquier pregunta que se te ocurra, la bola te dará una respuesta para ayudarte a despejar tus dudas.
 Puedes hacerla en español o inglés, la bola te contestará en el idioma que le indiques.
 
