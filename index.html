@@ -6,7 +6,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>título</title>
+  <title>Ask The Ball</title>
   <link rel="icon" type="image/png" href="./images/favicon-32x32.png" />
   <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700&display=swap" rel="stylesheet">  
   <link rel="stylesheet" type="text/css" href="./styles/reset.css">
@@ -15,12 +15,43 @@
 </head>
 
 
-<body>
+<body class="page">
 
-    <!-- Área de información ------------------------------------------------------------------------->
+  <!-- Área de información ------------------------------------------------------------------------->
 
-    
-    <!-- Área de resultados ---------------------------------------------------------------------------->
+  <div class="infoBox">
+    <div class="langBox">
+      <button id="es" class="button button--es">es</button>
+      <button id="en" class="button button--en activeLang">en</button>
+    </div>
+
+    <h1 class="title">ask the ball</h1>
+
+    <form class="formBox">
+      <input class="questionImput" type="text" placeholder="what would you like to know?">
+      <button class="button button--ask">ask</button>
+      <button class="button button--reset hidden">- make a new question -</button>
+    </form>
+
+    <p class="alert"></p>
+
+  </div>
+
+  <!-- Área de resultados ---------------------------------------------------------------------------->
+
+  <div class="resultsBox">
+
+    <p class="question"></p>
+
+    <div class="ball">
+      <p class="ball8">8</p>
+
+      <div class="answerBox transparent">
+        <p class="answer transparent"></p>
+      </div>
+    </div>
+
+  </div>
 
 
   <script type="text/javascript" src="./js/main.js"></script>

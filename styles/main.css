@@ -1,3 +1,4 @@
+
 /*Estilos Generales --------------------------------------------------------*/
 
 *{
@@ -6,9 +7,227 @@
 
 /*Estilos área de información -----------------------------------------------*/
 
+.infoBox{
+    width: 100vw;
+    height: 40vh; 
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+}
 
+.langBox{
+    position: absolute;
+    top: 7vh;
+    border: 0.5px solid gray;
+    padding: 5px;
+    border-radius: 15px;
+    box-shadow: 0 0 2px 0 gray inset;
+}
+.button{
+    cursor: pointer;
+    color: black;
+    font-size: 10px;
+    line-height: 10px;
+    text-transform: uppercase;
+    border: 1px solid black;
+    box-shadow: 0 0 3px 0 black;
+
+}
+.button:focus {
+    outline: none;
+}
+
+.button--es{
+    border-radius: 10px 0 0 10px;
+    padding: 5px 10px 5px 30px;
+}
+.button--en{
+    border-radius: 0 10px 10px 0;
+    padding: 5px 30px 5px 10px;
+}
+.activeLang{
+    box-shadow: 0 0 7px 0 black inset;
+}
+
+.title{
+    cursor: default;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+}
+
+.formBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    font-family: 'Rubik', sans-serif;
+}
+.questionImput{
+    height: 30px;
+    width: 220px;
+    font-size: 14px;
+    font-weight: 400;
+    padding-left: 1em;
+    border: 1px solid black;
+    border-radius: 15px 0 0 15px;
+    box-shadow: 0 0 3px 0 black;
+}
+.questionImput:focus {
+    outline: none;
+}
+
+.button--ask{
+    height: 30px;
+    font-size: 12px;
+    border-radius: 0 15px 15px 0;
+    padding: 10px 30px 10px 10px;
+}
+.button--reset{
+    height: 30px;
+    text-align: center;
+    border-radius: 15px;
+    padding: 10px 10px 10px 10px;
+
+    transition: border ease 1.5s 1.5s;
+    transition: color ease 1.5s 1.5s;
+    transition: 'background-color' ease 1.5s 1.5s;
+
+}
+
+.alert{
+    height: 15px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+}
 
 /*Estilos área de resultados -----------------------------------------------*/
 
+.resultsBox{
+    cursor: default;
+    position: relative;
+    overflow: hidden;
+    padding-top: 2rem;
+    width: 100vw;
+    height: 60vh; 
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+.question{
+    margin-top: -2rem;
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    transition: color ease 1s;
+}
+.seen{
+    color: black;
+    transition: color ease 1.5s 1s;
+}
+
+.ball{
+    position: absolute;
+    background-color: black;
+    width: 40vh;
+    min-width: 210px;
+    height: 40vh;
+    min-height: 210px;
+    border-radius: 50%;
+    transition: transform ease 1.5s;
+}
+.givingAnswers{
+    transform: translateY(25vh) scale(2);
+    transition: transform ease 1.5s;
+}
 
 
+.ball8{
+    position: absolute;
+    top: 50%;
+    transition: top ease 1.5s;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 90px;
+    font-weight: 700;
+}
+.gone{
+    top: 110%;
+    transition: top ease 1.5s;
+}
+
+
+.answerBox{
+    position: absolute;
+    height: 125px;
+    width: 125px;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: border ease 1.5s 1.5s;
+}
+.answer{
+    max-width: 110px;
+    font-size: 20px;
+    color: white;
+    transition: color ease 1.5s 3s;
+    font-weight: 700;
+    text-align: center;
+}
+
+.transparent{
+    border: transparent;
+    color: transparent;
+    background-color: transparent;
+    transition: border ease 1.5s 1.5s;
+    transition: color ease 1.5s;
+    transition: 'background-color' ease 1.5s 1.5s;
+    box-shadow: none;
+}
+.hidden{
+    display: none;
+}
+
+/*TABLET -------------------------------------------------------------------------------*/
+@media all and (min-width: 768px){
+    .title{
+        font-size: 60px;
+        line-height: 60px;
+    }    
+    .question{
+        font-size: 30px;
+    }
+
+}
+/*DESKTOP -------------------------------------------------------------------------------*/
+
+@media all and (min-width: 1024px){
+    .title{
+        font-size: 80px;
+        line-height: 80px;
+    }    
+    .question{
+        font-size: 40px;
+    }
+
+}
