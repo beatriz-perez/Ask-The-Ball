@@ -22,6 +22,6 @@ El objetivo de este proyecto es poner en práctica los conocimientos de JavaScri
 
 Y de paso, disfrutar un poco de lo aprendido, que sus horas ha costado!
 
-Que lo disfrutes tú también!!!
+**!!!Que lo disfrutes tú también!!!**
 
-
+Madrid, 14 de marzo de 2020
