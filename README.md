@@ -18,3 +18,10 @@ Puedes hacer tantas preguntas como desées. Sólo utiliza el botón "hacer otra 
 
 ### Objetivos del proyecto
 
+El objetivo de este proyecto es poner en práctica los conocimientos de JavaScript adquiridos a lo largo de las últimas dos semanas en Adalab: modificación de un archivo HTML mediante funciones, uso de parámetros y eventos, creación y uso de objetos y arrays... en fin JavaScript básico.
+
+Y de paso, disfrutar un poco de lo aprendido, que sus horas ha costado!
+
+Que lo disfrutes tú también!!!
+
+
